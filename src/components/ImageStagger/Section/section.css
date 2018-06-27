@@ -1,0 +1,7 @@
+.section-wrapper {
+    display: flex;
+}
+.section-wrapper-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
