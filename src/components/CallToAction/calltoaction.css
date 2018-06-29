@@ -1,6 +1,7 @@
 #call-to-action-wrapper {
-    height: 30%;
-    width: 100%;
-    background-image: url("../../assets/images/IMG_0097.JPG");
+    height: 45%;
+    width: 90%;
+    background-image: url("../../assets/images/long-granite-1.jpg");
     background-size: cover;
+    margin: 5%;
 }

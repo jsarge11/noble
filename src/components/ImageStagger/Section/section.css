@@ -1,7 +1,35 @@
 .section-wrapper {
     display: flex;
+    width: 90%;
+    margin: 10% 5%;
 }
 .section-wrapper-reverse {
     display: flex;
     flex-direction: row-reverse;
+    width: 90%;
+    margin: 10% 5%;
+}
+.section-text {
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Lato', sans-serif;
+    width: 200px;
+    color: #696969;
+}
+#image-visible {
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+}
+#image-hidden {
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+#text-visible {
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+}
+#text-hidden {
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
 }

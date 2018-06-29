@@ -1,17 +1,20 @@
 import React, {Component} from 'react'
 import './home.css'
-import LandingImage from './LandingImage/LandingImage';
 import ImageStagger from './ImageStagger/ImageStagger';
 import CallToAction from './CallToAction/CallToAction';
+import Footer from './Footer/Footer';
+import Landing from './Landing/Landing';
 
 
 export default class Home extends Component {
 render() {
         return (
            <div id="home-wrapper">
-            <LandingImage />
+            <Landing />
             <ImageStagger />
             <CallToAction />
+            <hr />
+            <Footer />
            </div>
         )
     }
