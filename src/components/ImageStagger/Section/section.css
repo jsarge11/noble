@@ -1,20 +1,19 @@
 .section-wrapper {
+    position: relative;
     height: 500px;
     display: flex;
     width: 90%;
-    margin: 10% 5%;
-}
-.section-wrapper-reverse {
-    height: 500px;
-    display: flex;
-    flex-direction: row-reverse;
-    width: 90%;
-    margin: 10% 5%;
+    margin: 15% 5%;
 }
 .section-text {
-    margin-top: 20%;
-    margin-left: 5%;
-    margin-right: 5%;
+    position: absolute;
+    right: 300px;
+    font-family: 'Lato', sans-serif;
+    width: 20%;
+    color: #696969;
+}
+.section-text-reverse {
+    position: absolute;
     font-family: 'Lato', sans-serif;
     width: 20%;
     color: #696969;
@@ -30,15 +29,11 @@
     transition: opacity .5s ease-in-out;
 }
 #text-visible {
-    position: absolute;
-    right: 200px;
     margin-top: 15%;
     opacity: 1;
     transition: all .5s ease-in-out;
 }
 #text-hidden {
-    position: absolute;
-    top: 500px;
     opacity: 0;
     transition: opacity .5s ease-in-out;
 }

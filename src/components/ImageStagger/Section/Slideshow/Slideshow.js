@@ -47,7 +47,7 @@ class Slideshow extends Component {
       )
     })
     return (
-      <div id={this.props.id} className="slideshow-wrapper">
+      <div id={this.props.id} className={this.props.className}>
         {slides}
       </div>
     );

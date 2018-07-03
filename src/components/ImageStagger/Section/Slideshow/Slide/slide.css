@@ -3,7 +3,7 @@
 }
 [class^="_img"] {
     opacity: 1;
-    transition: all 1s ease-in-out;
+    transition: all 2s ease-in-out;
     border: 1px black solid;
     padding: 20px;
 }

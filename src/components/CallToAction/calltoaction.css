@@ -1,7 +1,19 @@
 #call-to-action-wrapper {
     height: 45%;
     width: 90%;
-    background-image: url("../../assets/images/long-granite-1.jpg");
+    background-image: url("../../assets/images/granite-level-1.jpg");
     background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 5%;
+}
+#call-to-action-box {
+    border: 5px solid white;
+    padding: 30px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    width: 20%;
+    text-align: center;
 }
