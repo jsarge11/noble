@@ -1,9 +1,11 @@
 .section-wrapper {
+    height: 500px;
     display: flex;
     width: 90%;
     margin: 10% 5%;
 }
 .section-wrapper-reverse {
+    height: 500px;
     display: flex;
     flex-direction: row-reverse;
     width: 90%;
@@ -14,22 +16,29 @@
     margin-left: 5%;
     margin-right: 5%;
     font-family: 'Lato', sans-serif;
-    width: 200px;
+    width: 20%;
     color: #696969;
 }
 #image-visible {
     opacity: 1;
     transition: opacity .5s ease-in-out;
+    position: relative;
+    z-index: 999;
 }
 #image-hidden {
     opacity: 0;
     transition: opacity .5s ease-in-out;
 }
 #text-visible {
+    position: absolute;
+    right: 200px;
+    margin-top: 15%;
     opacity: 1;
-    transition: opacity .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 #text-hidden {
+    position: absolute;
+    top: 500px;
     opacity: 0;
     transition: opacity .5s ease-in-out;
 }

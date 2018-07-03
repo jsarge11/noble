@@ -1,0 +1,12 @@
+.slide-wrapper {
+    position: absolute;
+}
+[id^="_img"] {
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    border: 1px black solid;
+    padding: 20px;
+}
+.slide-image {
+    height: 600px;
+}
