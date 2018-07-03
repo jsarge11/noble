@@ -1,7 +1,7 @@
 .slide-wrapper {
     position: absolute;
 }
-[id^="_img"] {
+[class^="_img"] {
     opacity: 1;
     transition: all 1s ease-in-out;
     border: 1px black solid;

@@ -10,7 +10,7 @@ export default function Section(props) {
 
     return (
        <div className={className}>
-        <Slideshow id={imageId} />
+        <Slideshow id={imageId} img1={props.img1} img2={props.img2} img3={props.img3} />
         <div id={textId} className="section-text">
             <h1>{props.header}</h1>
             <p>{props.text}</p>

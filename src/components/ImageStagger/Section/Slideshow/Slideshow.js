@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import './slideshow.css';
 import Slide from './Slide/Slide';
-import img from '../../../../assets/images/discover-granite.jpg'
-import img2 from '../../../../assets/images/dark-granite.jpg'
-import img3 from '../../../../assets/images/best-granite.jpg'
 
 class Slideshow extends Component {
   state = {
-    slides: [{img: img}, {img: img2}, {img: img3}],
+    slides: [{img: this.props.img1}, {img: this.props.img2}, {img: this.props.img3}],
     active: 2,
   }
   componentDidMount() {
@@ -15,13 +12,21 @@ class Slideshow extends Component {
       let { active } = this.state;
       if (active === 0) {
         this.setState({ active: this.state.slides.length - 1}, () => {
-          document.getElementById(`_img${active}`).style.opacity = 1;
-          this.reset();
+          let pictures = document.getElementsByClassName(`_img${active}`);
+          for (let j = 0; j < pictures.length; j++) {
+            pictures[j].style.opacity = 0;
+            this.reset();
+          }
+
         })
       }
       else {
-        document.getElementById(`_img${active}`).style.opacity = 0;
-        this.setState({ active: active - 1})
+        let pictures = document.getElementsByClassName(`_img${active}`);
+          for (let j = 0; j < pictures.length; j++) {
+            pictures[j].style.opacity = 0;
+            this.setState({ active: active - 1})
+          }
+
       }
     }, 7000)
 
@@ -29,13 +34,16 @@ class Slideshow extends Component {
   reset = () => {
     let { slides } = this.state;
     for (let i = 0; i < slides.length; i++) {
-      document.getElementById(`_img${i}`).style.opacity = 1;
+      let pictures = document.getElementsByClassName(`_img${i}`);
+      for (let j = 0; j < pictures.length; j++) {
+        pictures[j].style.opacity = 1;
+      }
     }
   }
   render() {
     let slides = this.state.slides.map((item, i) => {
       return (
-        <Slide id={`_img${i}`} key={item+i} img={item.img} />
+        <Slide imgClass={`_img${i}`} key={item+i} img={item.img} />
       )
     })
     return (

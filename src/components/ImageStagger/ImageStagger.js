@@ -3,7 +3,6 @@ import './imagestagger.css'
 import { section_one } from '../../assets/text/sections'
 import Section from './Section/Section';
 
-
 export default class ImageStagger extends Component {
     state = {
         sectionOneImage: false,
@@ -12,13 +11,21 @@ export default class ImageStagger extends Component {
         sectionOneText: false,
         sectionTwoText: false,
         sectionThreeText: false,
+        top1: 'best-granite.jpg',
+        top2: 'discover-granite.jpg',
+        top3: 'dark-granite.jpg',
+        middle1: 'grey-granite.jpg',
+        middle2: 'white-granite-2.jpg',
+        middle3: 'shower-granite.jpg',
+        bottom1: 'kitchen-granite.jpg',
+        bottom2: 'white-granite.jpg',
+        bottom3: 'tv-granite.jpg'
 
     }
     componentDidMount() {
         document.addEventListener('scroll', this.handleScroll);
     }
     handleScroll = (e) => {
-        // console.log(window.scrollY);
         let { sectionOneImage, sectionTwoImage, sectionThreeImage
         , sectionOneText, sectionTwoText, sectionThreeText } = this.state;
 
@@ -42,15 +49,15 @@ export default class ImageStagger extends Component {
         }
     }
     render() {
+        console.log(this.state.top1);
     let { header, text } = section_one;
-    let { imgArr1, sectionOneImage, sectionOneText } = this.state;
-    let { activeImageArr2, nextImageArr2, sectionTwoImage, sectionTwoText } = this.state;
-    let { activeImageArr3, nextImageArr3, sectionThreeImage, sectionThreeText } = this.state;
+    let { sectionOneImage, sectionOneText, sectionTwoImage, sectionTwoText, sectionThreeImage, sectionThreeText } = this.state;
+    let { top1, top2, top3, middle1, middle2, middle3, bottom1, bottom2, bottom3  } = this.state;
             return (
         <div id="stagger-wrapper">
-            <Section header={header} text={text} imageFadeIn={sectionOneImage} textFadeIn={sectionOneText} reverse={false}/>
-            {/* <Section header={header} text={text} img={img2} nextImage={nextImageArr2} imageFadeIn={sectionTwoImage} textFadeIn={sectionTwoText} reverse={true}/>
-            <Section header={header} text={text} img={img3} nextImage={nextImageArr3} imageFadeIn={sectionThreeImage} textFadeIn={sectionThreeText} reverse={false}/> */}
+            <Section header={header} text={text} img1={top1} img2={top2} img3={top3} imageFadeIn={sectionOneImage} textFadeIn={sectionOneText} reverse={false}/>
+            <Section header={header} text={text} img1={middle1} img2={middle2} img3={middle3} imageFadeIn={sectionTwoImage} textFadeIn={sectionTwoText} reverse={true}/>
+            <Section header={header} text={text} img1={bottom1} img2={bottom2} img3={bottom3} imageFadeIn={sectionThreeImage} textFadeIn={sectionThreeText} reverse={false}/>
         </div>
         )
     }
