@@ -37,3 +37,20 @@
     opacity: 0;
     transition: opacity .5s ease-in-out;
 }
+@media (max-width: 1525px) {
+    .section-wrapper {
+        margin: 8% 5%;
+    }
+    #text-visible {
+        margin-top: 5%;
+    }
+}
+@media (max-width: 1315px) {
+    .section-wrapper {
+        margin: 3% 12.5%;
+        height: 400px;
+    }
+    #text-visible {
+        font-size: 14px;
+    }
+}

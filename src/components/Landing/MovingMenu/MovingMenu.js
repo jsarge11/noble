@@ -1,6 +1,7 @@
 import React from 'react'
 import './movingmenu.css'
 import logo from '../../../assets/images/logo.png'
+import menuIcon from '../../../assets/images/menu-icon.png'
 
 
 export default function MovingMenu(props) {
@@ -12,6 +13,7 @@ export default function MovingMenu(props) {
             <p className="moving-menu-item">WHY NOBLE</p>
             <p className="moving-menu-item">SERVICES</p>
         </div>
+        <img id="menu-icon" src={menuIcon} alt="menu-icon" onClick={() => props.showMenu()}/>
        </div>
     )
 }

@@ -21,3 +21,8 @@
     font-family: Avenir;
     src: url('../../../assets/AvenirLTStd-Light.otf');
 }
+@media (max-width: 750px) {
+    #menu-wrapper {
+        opacity: 0 !important;
+    }
+}

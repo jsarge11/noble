@@ -13,11 +13,14 @@ export default class Landing extends Component {
         landingImageOpacity: 0,
         bottom: -50,
         movingMenuOpacity: 0,
-        menuOn: false
+        menuOn: false,
+        smallMenu: false,
+        menuVisible: false
     }
     componentDidMount() {
         document.addEventListener('scroll', this.handleChange)
         setTimeout(() => this.startLoadIn(), 1000)
+
     }
     startLoadIn = () => {
         this.setState({ landingImageOpacity: 1 }, () => {
@@ -33,6 +36,17 @@ export default class Landing extends Component {
        else if (this.state.menuOn && window.scrollY < 900) {
            this.setState({ movingMenuOpacity: 0, menuOn: false })
        }
+    }
+    showMenu = () => {
+        let { menuVisible } = this.state;
+        if (!menuVisible) {
+            document.getElementById("moving-menu-item-wrapper").style.height = "160px";
+            this.setState({ menuVisible: !menuVisible})
+        }
+        else {
+            document.getElementById("moving-menu-item-wrapper").style.height = "0px";
+            this.setState({ menuVisible: !menuVisible})
+        }
     }
     render() {
         let landingStyles = {
@@ -53,13 +67,13 @@ export default class Landing extends Component {
        <div id="landing-wrapper">
         <LandingImage style={landingImageStyles} />
         <div style={landingStyles} id="landing-text" >
-            <img src={logo} alt="noble-stone" />
+            <img id="landing-logo" src={logo} alt="noble-stone" />
             <br/>
             <br/>
             {front_page.text}
         </div>
         <Menu style={menuStyle}/>
-        <MovingMenu style={movingMenuStyle}/>
+        <MovingMenu style={movingMenuStyle} showMenu={this.showMenu} />
        </div>
     )}
 }
