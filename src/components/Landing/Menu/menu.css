@@ -1,0 +1,17 @@
+#menu-wrapper {
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    transition: all 1s ease-in-out;
+}
+.menu-item {
+    color: white;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 300;
+    margin: 2%;
+    /* padding: 5%; */
+}
+@font-face {
+    font-family: Avenir;
+    src: url('../../../assets/AvenirLTStd-Light.otf');
+}

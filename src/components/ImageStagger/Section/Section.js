@@ -13,8 +13,12 @@ export default function Section(props) {
        <div className='section-wrapper'>
         <Slideshow id={imageId} className={imgClassName} img1={props.img1} img2={props.img2} img3={props.img3} />
         <div id={textId} className={textClassName}>
-            <h1>{props.header}</h1>
-            <p>{props.text}</p>
+            <h1>{props.text.header}</h1>
+            {props.text.text}<br/>
+            {props.text.textTwo || ''}<br/>
+            {props.text.textThree || ''}<br/>
+            {props.text.textFour || ''}<br/>
+            {props.text.textFive || ''}<br/>
         </div>
        </div>
     )

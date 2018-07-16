@@ -11,19 +11,25 @@ export default function Footer(props) {
 
     <img src={logo} height="50px" alt="logo" />
 
-    <p className="footer-company-name">Noble Stone Management &copy; 2015</p>
 
-    <div className="footer-icons">
+
+    <p className="footer-company-name">
+    Contact Directly:<br/>
+    (801)-935-1273<br/>
+    louie@noblemanagement.net<br/><br/>
+    Noble Stone Management &copy; 2018</p>
+
+    {/* <div className="footer-icons">
         <a href="#"><i className="fa fa-facebook"></i></a>
         <a href="#"><i className="fa fa-twitter"></i></a>
         <a href="#"><i className="fa fa-linkedin"></i></a>
-    </div>
+    </div> */}
 
 </div>
 
 <div className="footer-right">
 
-    <p>Contact Us</p>
+    <p>Inquiries? Message me!</p>
 
     <form action="#" method="post">
 
