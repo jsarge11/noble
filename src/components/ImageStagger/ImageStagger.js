@@ -47,10 +47,12 @@ export default class ImageStagger extends Component {
         if (!sectionThreeText && window.scrollY > 2269) {
             this.setState({ sectionThreeText: true })
         }
+
+        if (window.scrollY > 930) {
+
+        }
     }
     render() {
-        console.log(this.state.top1);
-
     let { sectionOneImage, sectionOneText, sectionTwoImage, sectionTwoText, sectionThreeImage, sectionThreeText } = this.state;
     let { top1, top2, top3, middle1, middle2, middle3, bottom1, bottom2, bottom3  } = this.state;
             return (
