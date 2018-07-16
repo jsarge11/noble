@@ -20,5 +20,11 @@
     font-family: 'Avenir', sans-serif;
     font-weight: 300;
     margin: 2%;
+    padding: 1%;
     cursor: pointer;
+    border: 1px white solid;
+    transition: all .2s linear;
+}
+.moving-menu-item:hover {
+    border: 1px black solid;
 }

@@ -9,7 +9,13 @@
     font-family: 'Avenir', sans-serif;
     font-weight: 300;
     margin: 2%;
-    /* padding: 5%; */
+    border: 1px solid rgba(255, 255, 255, 0.0);
+    padding: 1%;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.menu-item:hover {
+    border: 1px solid white;
 }
 @font-face {
     font-family: Avenir;
