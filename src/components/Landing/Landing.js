@@ -30,10 +30,10 @@ export default class Landing extends Component {
         });
     }
     handleChange = (e) => {
-       if (!this.state.menuOn && window.scrollY > 900) {
+       if (!this.state.menuOn && window.scrollY > window.innerHeight) {
            this.setState({ movingMenuOpacity: 1, menuOn: true });
        }
-       else if (this.state.menuOn && window.scrollY < 900) {
+       else if (this.state.menuOn && window.scrollY < window.innerHeight) {
            this.setState({ movingMenuOpacity: 0, menuOn: false })
        }
     }

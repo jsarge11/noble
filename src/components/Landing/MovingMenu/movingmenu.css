@@ -1,7 +1,7 @@
 #moving-menu-wrapper {
     background-color: white;
-    width: 96%;
-    padding: 1% 2% 3% 3%;
+    width: 100%;
+    padding: 1%;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black;
@@ -9,31 +9,33 @@
     top: 0;
     left: 0;
     z-index: 1005;
-    transition: all 1s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+#moving-menu-wrapper img {
+    margin-top: 2%;
 }
 #moving-menu-item-wrapper {
     display: flex;
     position: relative;
     justify-content: flex-end;
-    width: 70%;
-    transition: all 1s ease-in-out;
+    width: 100%;
+    transition: all .3s ease-in-out;
     z-index: 1004;
-
 }
 #menu-icon {
     height: 30px;
     opacity: 0;
     cursor: pointer;
+    margin-right: 5%;
 }
 .moving-menu-item {
     color: black;
     font-family: 'Avenir', sans-serif;
     font-weight: 300;
     margin: 2%;
-    padding: 1%;
     cursor: pointer;
     border: 1px white solid;
-    transition: all 1s ease-in-out;
+    transition: all .3s ease-in-out;
     padding: 2%;
 
 }
@@ -45,6 +47,7 @@
         opacity: 1 !important;
     }
     .moving-menu-item {
+        text-align: right;
         margin: 1%;
     }
 }

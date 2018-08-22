@@ -29,22 +29,22 @@ export default class ImageStagger extends Component {
         let { sectionOneImage, sectionTwoImage, sectionThreeImage
         , sectionOneText, sectionTwoText, sectionThreeText } = this.state;
 
-        if (!sectionOneImage && window.scrollY > 306) {
+        if (!sectionOneImage && window.scrollY > window.innerHeight / 3) {
             this.setState({ sectionOneImage: true });
         }
-        if (!sectionOneText && window.scrollY > 582) {
+        if (!sectionOneText && window.scrollY > window.innerHeight / 2) {
             this.setState({ sectionOneText: true })
         }
-        if (!sectionTwoImage && window.scrollY > 1148) {
+        if (!sectionTwoImage && window.scrollY > window.innerHeight / 1.5) {
             this.setState({ sectionTwoImage: true })
         }
-        if (!sectionTwoText && window.scrollY > 1419) {
+        if (!sectionTwoText && window.scrollY > window.innerHeight / 1.1) {
             this.setState({ sectionTwoText: true })
         }
-        if (!sectionThreeImage && window.scrollY > 2010) {
+        if (!sectionThreeImage && window.scrollY > window.innerHeight * 1.6) {
             this.setState({ sectionThreeImage: true })
         }
-        if (!sectionThreeText && window.scrollY > 2269) {
+        if (!sectionThreeText && window.scrollY > window.innerHeight * 1.7) {
             this.setState({ sectionThreeText: true })
         }
     }

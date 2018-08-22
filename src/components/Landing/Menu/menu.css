@@ -10,7 +10,7 @@
     font-weight: 300;
     margin: 2%;
     border: 1px solid rgba(255, 255, 255, 0.0);
-    padding: 1%;
+    padding: 5%;
     transition: all .3s linear;
     cursor: pointer;
 }
