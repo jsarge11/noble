@@ -2,3 +2,8 @@
   width: 100%;
   height: 100%;
 }
+@font-face {
+  font-family: 'Doughboy';
+  font-style: normal;
+  src: url(./assets/Doughboy.ttf)
+}

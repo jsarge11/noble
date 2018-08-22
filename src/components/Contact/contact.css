@@ -1,0 +1,20 @@
+#contact-filler {
+    height: 30%;
+}
+#contact-wrapper {
+    height: 70%;
+}
+#contact-body {
+    height: 100%;
+    font-family: 'Doughboy';
+    font-size: 36px;
+    margin-left: 10%;
+    color: grey;
+    display: flex;
+}
+.contact-greeting {
+    transition: all .5s ease-in-out;
+}
+#contact-right-img {
+    transition: all .5s ease-in-out;
+}
