@@ -87,14 +87,14 @@
 	color: #ffffff;
 }
 
-/* The contact form */
+/* The contact .frontpage-form */
 
-.footer-distributed form{
+.footer-distributed .frontpage-form{
 	display: inline-block;
 }
 
-.footer-distributed form input,
-.footer-distributed form textarea{
+.footer-distributed .frontpage-form input,
+.footer-distributed .frontpage-form textarea{
 	display: block;
 	border-radius: 3px;
 	box-sizing: border-box;
@@ -126,17 +126,17 @@
 }
 
 
-.footer-distributed form input{
+.footer-distributed .frontpage-form input{
 	height: 55px;
 	margin-bottom: 15px;
 }
 
-.footer-distributed form textarea{
+.footer-distributed .frontpage-form textarea{
 	height: 100px;
 	margin-bottom: 20px;
 }
 
-.footer-distributed form button{
+.footer-distributed .frontpage-form button{
 	border-radius: 3px;
 	background-color:  #33383b;
 	color: #ffffff;
@@ -158,12 +158,12 @@
 		font-size: 12px;
 	}
 
-	.footer-distributed form input,
-	.footer-distributed form textarea{
+	.footer-distributed .frontpage-form input,
+	.footer-distributed .frontpage-form textarea{
 		width: 250px;
 	}
 
-	.footer-distributed form button{
+	.footer-distributed .frontpage-form button{
 		padding: 10px 35px;
 	}
 
@@ -186,15 +186,15 @@
 		margin-bottom: 40px;
 	}
 
-	.footer-distributed form{
+	.footer-distributed .frontpage-form{
 		margin-top: 30px;
 	}
 
-	.footer-distributed form{
+	.footer-distributed .frontpage-form{
 		display: block;
 	}
 
-	.footer-distributed form button{
+	.footer-distributed .frontpage-form button{
 		float: none;
 	}
 }
