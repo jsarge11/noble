@@ -24,7 +24,6 @@ showLetters(i) {
     setTimeout(() => {
         this.setState({ [`${i}`] : true})
         if (i < 10) {
-            console.log(i);
             this.showLetters(++i);
         }
     }, 200)
@@ -48,7 +47,7 @@ render() {
                         <p className="contact-greeting" style={{opacity: this.state[`${7}`] ? 1 : 0}}>You!</p>
                     </div>
                     <div id="contact-middle" style={{opacity: this.state[`${10}`] ? 1 : 0}}>
-                        
+
                         Questions? Comments? <br/> Free consultation?  <br/> <br/>
                         Don't hesitate to contact about all your stone restoration questions! <br/>
 
@@ -58,7 +57,7 @@ render() {
 
                         -Louie Noble<br/>
                         (801)-935-1273<br/>
-                        
+
                     </div>
                     <div id="contact-right"
                          style={{ marginLeft: percent }}>

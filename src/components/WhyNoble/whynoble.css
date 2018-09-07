@@ -1,0 +1,17 @@
+#whynoble-wrapper {
+    height: 150%;
+    background-color: black;
+}
+#whynoble-content {
+    background-image: url("../../assets/images/construction.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transition: 1s all ease-in-out;
+}
+#whynoble-header {
+    padding: 15% 10%;
+    color: white;
+    font-family: Doughboy;
+    font-size: 50px;
+}
