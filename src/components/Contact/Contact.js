@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import './contact.css'
 import MovingMenu from '../Landing/MovingMenu/MovingMenu';
 import Footer from '../Footer/Footer';
-import side from '../../assets/images/side-granite.jpg'
+import side from '../../assets/images/logo-text.png'
 
 
 export default class Contact extends Component {
@@ -14,7 +14,8 @@ state = {
     5: false,
     6: false,
     7: false,
-    8: false
+    8: false,
+    9: false
 }
 componentDidMount() {
     this.showLetters(1);
@@ -22,7 +23,8 @@ componentDidMount() {
 showLetters(i) {
     setTimeout(() => {
         this.setState({ [`${i}`] : true})
-        if (i < 9) {
+        if (i < 10) {
+            console.log(i);
             this.showLetters(++i);
         }
     }, 200)
@@ -43,18 +45,28 @@ render() {
                         <p className="contact-greeting" style={{opacity: this.state[`${4}`] ? 1 : 0}}>To</p>
                         <p className="contact-greeting" style={{opacity: this.state[`${5}`] ? 1 : 0}}>Hear</p>
                         <p className="contact-greeting" style={{opacity: this.state[`${6}`] ? 1 : 0}}>From</p>
-                        <p className="contact-greeting" style={{opacity: this.state[`${7}`] ? 1 : 0}}>You</p>
+                        <p className="contact-greeting" style={{opacity: this.state[`${7}`] ? 1 : 0}}>You!</p>
                     </div>
-                    <div id="contact-middle">
+                    <div id="contact-middle" style={{opacity: this.state[`${10}`] ? 1 : 0}}>
+                        
+                        Questions? Comments? <br/> Free consultation?  <br/> <br/>
+                        Don't hesitate to contact about all your stone restoration questions! <br/>
 
+                        Follow us on Instagram @noble_stone_management! <br/><br/>
+
+                        Use the below form, <br/>or call us today! <br/><br/>
+
+                        -Louie Noble<br/>
+                        (801)-935-1273<br/>
+                        
                     </div>
                     <div id="contact-right"
                          style={{ marginLeft: percent }}>
                         <img    id="contact-right-img"
                                 src={side}
                                 alt="granite-counter"
-                                height="100%"
-                                style={{opacity: this.state[`${9}`] ? 1 : 1}}
+                                height="20%"
+                                style={{opacity: this.state[`${9}`] ? 1 : 0}}
 
                         />
                     </div>

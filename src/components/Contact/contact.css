@@ -3,6 +3,15 @@
 }
 #contact-wrapper {
     height: 70%;
+    margin-top: 2%;
+}
+#contact-middle {
+    width: 30%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 2% 5% 5% 10%;
+    transition: all .5s ease-in-out;
 }
 #contact-body {
     height: 100%;
@@ -11,10 +20,22 @@
     margin-left: 10%;
     color: grey;
     display: flex;
+    justify-content: space-evenly;
 }
 .contact-greeting {
     transition: all .5s ease-in-out;
 }
 #contact-right-img {
     transition: all .5s ease-in-out;
+    float: right;
+}
+@media (max-width: 1250px) {
+    #contact-body {
+        font-size: 28px;
+    }
+}
+@media (max-width: 1050px) {
+    #contact-body {
+        font-size: 26px;
+    }
 }
