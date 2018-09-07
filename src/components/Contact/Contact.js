@@ -15,7 +15,8 @@ state = {
     6: false,
     7: false,
     8: false,
-    9: false
+    9: false,
+    menuVisible: false
 }
 componentDidMount() {
     this.showLetters(1);
@@ -29,12 +30,23 @@ showLetters(i) {
     }, 200)
 
 }
+showMenu = () => {
+    let { menuVisible } = this.state;
+    if (!menuVisible) {
+        document.getElementById("moving-menu-item-wrapper").style.height = "160px";
+        this.setState({ menuVisible: !menuVisible})
+    }
+    else {
+        document.getElementById("moving-menu-item-wrapper").style.height = "0px";
+        this.setState({ menuVisible: !menuVisible})
+    }
+}
 render() {
     let percent = this.state[`${9}` ? 40 : 45];
 
         return (
            <div id="contact-wrapper">
-            <MovingMenu style={{opacity: 1}}/>
+            <MovingMenu style={{opacity: 1}} showMenu={this.showMenu}/>
                 <section id="contact-filler"></section>
                 <section id="contact-body">
                     <div id="contact-left">

@@ -11,8 +11,8 @@ export default function MovingMenu(props) {
         <Link to="/"><img src={logo} height={40} alt="logo" /> </Link>
         <div id="moving-menu-item-wrapper">
             <p className="moving-menu-item"> <a href="/#/contact">CONTACT</a></p>
-            <p className="moving-menu-item">WHY NOBLE</p>
-            <p className="moving-menu-item">SERVICES</p>
+            <p className="moving-menu-item"> <a href="/#/whynoble">WHY NOBLE</a></p>
+            {/* <p className="moving-menu-item">SERVICES</p> */}
         </div>
         <img id="menu-icon" src={menuIcon} alt="menu-icon" onClick={() => props.showMenu()}/>
        </div>
