@@ -25,5 +25,12 @@ let front_page = {
     offering the best products and latest techniques available to provide you with the best outcome
     that can be had. `
 }
+let why_noble = {
+    text: `You use them every day. The dog scratches them. The kids abuse them with grungy feet, toys, soccer balls and spilled milk.
+    Your furniture marks them. The sun bleaches them. Every day, adding insult to injury, you walk over them. We’re talking about your
+    floors. Even though every effort has been put into its care, you have repeatedly admonished yourself or your housekeeper to make a
+    greater effort to keep your natural stone floors looking clean and bright. But with every passing day your grout lines get blacker,
+    holes become more evident and the shine is distorted.`
+}
 
-export { section_one, section_two, section_three, front_page };
+export { section_one, section_two, section_three, front_page, why_noble };

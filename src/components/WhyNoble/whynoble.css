@@ -10,8 +10,18 @@
     transition: 1s all ease-in-out;
 }
 #whynoble-header {
-    padding: 15% 10%;
-    color: white;
     font-family: Doughboy;
     font-size: 50px;
+}
+.whynoble-body {
+    font-family: 'Lato', sans-serif;
+    width: 75%;
+    font-size: 20px;
+}
+#whynoble-text {
+    color: white;
+    padding: 15% 10%;
+}
+#whynoble-call-to-action {
+    font-size: 25px;
 }
