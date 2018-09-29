@@ -6,3 +6,9 @@ export function toCapital(text) {
 
     return newArr.join('');
 }
+export function serviceAreaToLeft() {
+    this.setState({ serviceAreaRight: 0 })
+}
+export function serviceAreaToRight() {
+    this.setState({ serviceAreaRight: "-100%" })
+}

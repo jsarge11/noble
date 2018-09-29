@@ -7,6 +7,7 @@ import Landing from './Landing/Landing';
 
 
 export default class Home extends Component {
+
 render() {
         return (
            <div id="home-wrapper">

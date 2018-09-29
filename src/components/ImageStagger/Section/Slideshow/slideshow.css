@@ -4,3 +4,9 @@
 .slideshow-wrapper-reverse {
     margin-left: 40%;
 }
+
+@media (max-width: 745px) {
+    .slideshow-wrapper-reverse {
+        margin-left: 0;
+    }
+}
