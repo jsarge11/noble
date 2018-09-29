@@ -15,13 +15,15 @@ export default class Landing extends Component {
         movingMenuOpacity: 0,
         menuOn: false,
         smallMenu: false,
-        menuVisible: false
+        menuVisible: false,
     }
+
     componentDidMount() {
         document.addEventListener('scroll', this.handleChange)
         setTimeout(() => this.startLoadIn(), 1000)
 
     }
+
     startLoadIn = () => {
         this.setState({ landingImageOpacity: 1 }, () => {
             setTimeout(() => this.setState({ landingImageOpacity: .5 }, () => {

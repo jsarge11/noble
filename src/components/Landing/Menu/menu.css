@@ -17,6 +17,9 @@
 .menu-item:hover {
     border: 1px solid white;
 }
+#menu-item-service-area {
+    cursor: auto;
+}
 @font-face {
     font-family: Avenir;
     src: url('../../../assets/AvenirLTStd-Light.otf');

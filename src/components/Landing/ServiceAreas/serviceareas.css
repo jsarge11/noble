@@ -1,0 +1,12 @@
+#service-area-wrapper {
+    position: fixed;
+    top: 10%;
+    height: 50%;
+    width: 50%;
+    background-color: white;
+    border-radius: 5%;
+    padding: 1%;
+    font-size: 30px;
+    transition: all .5s ease-in-out;
+    border: 1px solid black;
+}
