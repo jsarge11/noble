@@ -4,9 +4,10 @@
     height: 50%;
     width: 50%;
     background-color: white;
-    border-radius: 5%;
     padding: 1%;
     font-size: 30px;
     transition: all .5s ease-in-out;
-    border: 1px solid black;
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 }
