@@ -1,13 +1,15 @@
 #service-area-wrapper {
     position: fixed;
-    top: 10%;
-    height: 50%;
+    top: 40%;
     width: 50%;
     background-color: white;
     padding: 1%;
-    font-size: 30px;
+    font-size: 20px;
     transition: all .5s ease-in-out;
     -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+#coming-soon-areas {
+    font-size: 30px;
 }
