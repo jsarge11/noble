@@ -25,6 +25,8 @@
 #whynoble-call-to-action {
     font-size: 25px;
 }
+
+/* responsive-width */
 @media (max-width: 1000px) {
     #whynoble-header {
         font-size: 40px;
@@ -45,5 +47,15 @@
     }
     #whynoble-call-to-action {
         font-size: 19px;
+    }
+}
+
+/* responsive-height */
+@media (max-height: 690px) {
+    .whynoble-body {
+        font-size: 16px;
+    }
+    #whynoble-call-to-action {
+        font-size: 18px;
     }
 }
