@@ -60,7 +60,7 @@ render() {
                     </div>
                     <div id="contact-middle" style={{opacity: this.state[`${10}`] ? 1 : 0}}>
 
-                        Questions? Comments? <br/> Free consultation?  <br/> <br/>
+                        Questions? <br/> Comments? <br/> Free consultation?  <br/> <br/>
                         Don't hesitate to contact about all your stone restoration questions! <br/>
 
                         Follow us on Instagram @noble_stone_management! <br/><br/>
