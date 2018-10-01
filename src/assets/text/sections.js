@@ -7,7 +7,7 @@ let section_one = {
     textFive: "Damage and stains (as a result of household cleaners)"
 }
 let section_two = {
-    header : 'Maintenence Programs',
+    header : 'Maintenance Programs',
     text : `We offer monthly, quarterly and bi-annual maintenance programs
     geared for your location and budget. Maintenance programs (including frequency
     and scope of work) are customized to your surfaces and budget.`
