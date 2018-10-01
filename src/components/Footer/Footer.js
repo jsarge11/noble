@@ -57,7 +57,11 @@ export default class Footer extends Component {
             </div >
         :
             <div>
-                Thanks for you feedback, we will reach out as soon as we can!
+                <div class="checkmark-circle">
+                    <div class="background"></div>
+                    <div class="checkmark draw"></div>
+                </div>
+                <p>Thanks for you feedback, we will reach out as soon as we can!</p>
             </div>
         }
 
