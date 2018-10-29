@@ -60,3 +60,11 @@
         opacity: 1;
     }
 }
+@media (max-width: 450px) {
+    #moving-menu-wrapper {
+       justify-content: center;
+    }
+    #moving-menu-wrapper img {
+        height: 30px;
+    }
+}

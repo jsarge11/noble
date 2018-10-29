@@ -13,3 +13,12 @@
 #coming-soon-areas {
     font-size: 30px;
 }
+@media (max-width: 450px) {
+    #service-area-wrapper {
+        font-size: 15px;
+    }
+    #coming-soon-areas {
+        font-size: 25px;
+    }
+
+}

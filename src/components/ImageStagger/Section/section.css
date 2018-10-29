@@ -92,3 +92,17 @@
         text-align: center;
     }
 }
+@media (max-width: 390px) {
+    .section-wrapper {
+        margin-bottom: 60%;
+        margin-left: 11.5%;
+        margin-right: 11.5%;
+    }
+}
+@media (max-width: 330px) {
+    .section-wrapper {
+        margin-bottom: 80%;
+        margin-left: 11.5%;
+        margin-right: 11.5%;
+    }
+}
