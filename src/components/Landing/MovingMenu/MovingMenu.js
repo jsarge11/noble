@@ -11,6 +11,15 @@ export default class MovingMenu extends Component {
     state = {
         serviceAreaRight: "-100%"
     }
+    transitionServiceAreas() {
+        let { serviceAreaRight } = this.state;
+        if ( serviceAreaRight === "-100%") {
+            serviceAreaToLeft.call(this);
+        }
+        else {
+            serviceAreaToRight.call(this);
+        }
+    }
     render() {
         return (
             <div style={this.props.style} id="moving-menu-wrapper">
@@ -19,8 +28,10 @@ export default class MovingMenu extends Component {
                 <p className="moving-menu-item"> <a href="/#/contact">CONTACT</a></p>
                 <p className="moving-menu-item"> <a href="/#/whynoble">WHY NOBLE</a></p>
                 <p className="moving-menu-item"
-                   onMouseEnter={() => serviceAreaToLeft.call(this)}
-                   onMouseLeave={() => serviceAreaToRight.call(this)}
+                //    onMouseEnter={() => serviceAreaToLeft.call(this)}
+                //    onMouseLeave={() => serviceAreaToRight.call(this)}
+                   onClick={() => this.transitionServiceAreas() }
+
                 >
                     SERVICE AREAS
                 </p>
